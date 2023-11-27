@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        8th task
+    </title>
+    <style>
+        .m1 {
+            height: 700px;
+            width: 100%;
+            z-index: 3;
+            position: relative;
+        }
+
+        .m1overlay1 {
+            height: 700px;
+            width: 100%;
+            background-image: url(./boy3.jpg);
+            background-position: top;
+            background-size: cover;
+            margin-top: 0px;
+            border: solid 1px transparent;
+            background-attachment: fixed;
+            position: absolute;
+        }
+
+        .m1overlay2 {
+            height: 700px;
+            width: 100%;
+            background-color: black;
+            background-size: cover;
+            margin-top: 0px;
+            opacity: 0.7;
+            margin-top: 0px;
+            border: solid 1px transparent;
+            background-attachment: fixed;
+            position: absolute;
+            ;
+        }
+
+        .m1stripes {
+            height: 30px;
+            width: 2%;
+            margin-top: 15px;
+            ;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .m1stripes123 {
+            height: 1px;
+            width: 100%;
+            margin-top: 5px;
+            background-color: white;
+            border: solid 1px white;
+            border-radius: 2px;
+        }
+
+        .m1logo {
+            height: 170px;
+            width: 35%;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px transparent;
+            display: flex;
+        }
+
+        .logo {
+            height: 100%;
+            width: 250px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .m1text {
+            height: 200px;
+            width: 60%;
+            border: solid 1px transparent;
+            color: white;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            justify-content: center;
+            ;
+        }
+
+        .m1triangle {
+            height: 40px;
+            width: 10%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px transparent;
+        }
+
+        .triangle {
+            height: 0px;
+            width: 0px;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid white;
+        }
+
+        .h1 {
+            font-size: 38pt;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .w1 {
+            font-size: 15pt;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .m2 {
+            height: 300px;
+            width: 80%;
+            text-align: center;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fos30pt {
+            font-size: 35pt
+        }
+
+        .fos15pt {
+            font-size: 15pt;
+        }
+
+        .fos20pt {
+            font-size: 20pt;
+        }
+
+        .fm {
+            font-weight: lighter;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            letter-spacing: 4px;
+        }
+
+        .mtext1 {
+            font-size: small;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .mtext2 {
+            font-size: x-large;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .mtext3 {
+            font-size: large;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+        }
+
+        .mtext11 {
+            font-size: 35pt;
+            font-weight: bold;
+            color: black;
+            line-height: 10%;
+        }
+
+        .mtext22 {
+            font-size: medium;
+            font-weight: normal;
+            color: black;
+            letter-spacing: 5px;
+        }
+
+        .mtext33 {
+            font-size: medium;
+            font-weight: normal;
+            color: black;
+        }
+
+        .m8text1 {
+            font-size: medium;
+            font-family: system-ui;
+        }
+
+        .m8text2 {
+            font-size: medium;
+            font-family: system-ui;
+        }
+
+        .mtextbold {
+            font-size: 38pt;
+            font-weight: bold;
+            color: black;
+            line-height: 10%;
+        }
+
+        .u {
+            text-decoration: underline;
+            letter-spacing: 1px;
+            font-weight: normal;
+            font-variant-caps: all-petite-caps;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .u1 {
+            letter-spacing: 1px;
+            font-weight: lighter;
+            font-variant-caps: all-petite-caps;
+            font-size: xx-large;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .u2 {
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-variant-caps: all-petite-caps;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .u3 {
+            letter-spacing: 0px;
+            font-weight: 400;
+            font-variant-caps: all-petite-caps;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .m3 {
+            height: 250px;
+            width: 100%;
+            line-break: loose;
+            ;
+        }
+
+        .m3fl {
+            height: 100%;
+            width: 33%;
+            float: left;
+            margin-left: 0px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./brownies.jpg);
+        }
+
+        .m3fr {
+            height: 100%;
+            width: 33%;
+            float: right;
+            margin-right: 0px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./pie.jpg);
+        }
+
+        .m3fc {
+            height: 100%;
+            width: 30%;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .m4 {
+            height: 250px;
+            width: 100%;
+            ;
+        }
+
+        .m4fl {
+            height: 100%;
+            width: 30%;
+            float: left;
+            margin-left: 10px;
+            margin-right: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .m4fr {
+            height: 100%;
+            width: 30%;
+            float: right;
+            margin-right: 10px;
+            margin-right: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .m4fc {
+            height: 100%;
+            width: 34%;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./ceral\ 2.jpg);
+        }
+
+        .m5 {
+            height: 550px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .m51 {
+            height: 100px;
+            width: 100%;
+            margin-top: 40px;
+            border: solid 1px transparent;
+            line-height: 4px;
+        }
+
+        .m52 {
+            height: 400px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            border: solid 1px transparent;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .m53 {
+            height: 40px;
+            width: 18%;
+            margin-left: auto;
+            margin-right: auto;
+            ;
+            background-color: white;
+            border: solid 2px black;
+            margin-top: -50px;
+            font-size: 15pt;
+            font-weight: normal;
+            font-variant-caps: all-petite-caps;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .m54 {
+            height: 40px;
+            width: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            ;
+            background-color: white;
+            border: solid 2px black;
+            margin-top: 30px;
+            font-size: 18pt;
+            font-weight: normal;
+            font-variant-caps: all-petite-caps;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .m52l {
+            height: 100%;
+            width: 27%;
+            float: left
+        }
+
+        .m52r {
+            height: 100%;
+            width: 27%;
+            float: right
+        }
+
+        .m52c {
+            height: 100%;
+            width: 27%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            ;
+        }
+
+        .m6 {
+            height: 700px;
+            width: 100%;
+            margin-top: 30px;
+            background-image: url(./cake\ 3.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            background-attachment: fixed;
+        }
+
+        .m61 {
+            height: 700px;
+            width: 100%;
+            margin-top: 30px;
+            background-color: black;
+            opacity: 0.5;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            z-index: 2;
+            background-attachment: fixed;
+        }
+
+        .m62 {
+            height: 700px;
+            width: 100%;
+            margin-top: 30px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+        }
+
+        .m6text {
+            height: 180px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+        }
+
+        .m7 {
+            height: 150px;
+            width: 100%;
+            margin-top: 10px;
+            border: solid 1px transparent;
+            text-align: center;
+        }
+
+        .m8 {
+            height: 100px;
+            width: 40%;
+            float: left;
+            margin-left: 5%;
+            text-align: center;
+            margin-top: 40px;
+            border: 0px solid transparent;
+        }
+
+        .m9 {
+            height: 100px;
+            width: 40%;
+            float: right;
+            margin-right: 5%;
+            text-align: center;
+            margin-top: 40px;
+            border: 0px solid transparent;
+        }
+
+        .m10 {
+            height: 700px;
+            width: 100%;
+            margin-top: 500px;
+            border: solid 0px transparent;
+        }
+
+        .m10l {
+            height: 100%;
+            width: 50%;
+            background-position: center;
+            float: left;
+            background-size: cover;
+            background-image: url(./wine.jpg);
+        }
+
+        .m10r {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        .m10rtop {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./yellowcake.jpg);
+        }
+
+        .m10rbottom {
+            height: 50%;
+            width: 100%;
+        }
+
+        .m10rbottoml {
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./pizza.jpg);
+        }
+
+        .m10rbottomr {
+            height: 100%;
+            width: 50%;
+            float: right;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./brownies.jpg);
+        }
+
+        .log {
+            height: 350px;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            line-height: 10px;
+        }
+
+        .logl {
+            height: 300px;
+            width: 70%;
+            float: left;
+        }
+
+        .logr {
+            height: 300px;
+            width: 20%;
+            float: right;
+            margin-right: 70px;
+        }
+
+        .logrcircle {
+            height: 270px;
+            width: 270px;
+            border-radius: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: white;
+        }
+
+        .lgrtext {
+            height: 50%;
+            width: 50%;
+            font-size: x-large;
+            font-variant-caps: all-petite-caps;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 3px;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logl1 {
+            height: 100px;
+            width: 30%;
+            float: right;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logl1text {
+            height: 150px;
+            width: 30%;
+            float: right;
+            margin-top: 1px;
+        }
+
+        .logimg {
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logimgupd {
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loglt1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+
+        .loglt2 {
+            font-weight: lighter;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .m12 {
+            height: 50px;
+            width: 40%;
+            background-color: white;
+            border: solid 1px lightgray;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .m12t {
+            margin-left: 10px;
+            font-size: medium;
+            font-weight: lighter;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .m13 {
+            height: 20px;
+            width: 40%;
+            background-color: white;
+            ;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .m13t {
+            margin-left: 8px;
+            font-size: medium;
+            font-weight: lighter;
+            color: grey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .color {
+            color: blue;
+        }
+
+        .last {
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            margin-top: 90px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .lasttext {
+            height: 50%;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .placeholder {
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        .f:focus {
+            color: black;
+            background-color: lightgray;
+            opacity: 1;
+            border-bottom: solid 1px black;
+        }
+
+        .a:hover {
+            color: white;
+            background-color: black;
+            filter: drop-shadow(0px 0px 4px black);
+            filter: drop-shadow(-4px -4px -4px black);
+        }
+
+        .fa:focus {
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        .checkbox {
+            height: 11px;
+            width: 11px;
+            border: solid 1px black;
+            border-radius: 2px;
+            float: left;
+            margin-top: 4px
+        }
+    </style>
+</head>
+
+<body style="width: 100%;display:contents;">
+    <div class="m1overlay1"></div>
+    <div class="m1overlay2"></div>
+    <div class="m1">
+        <div class="m1stripes">
+            <div class="m1stripes123"></div>
+            <div class="m1stripes123"></div>
+            <div class="m1stripes123"></div>
+        </div>
+        <div class="m1logo"><img class="logo" src="./logo 3.png" alt=""></div>
+        <div class="m1text">
+            <p class="h1">One Step to Making a Good Start</p>
+            <p class="w1">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem
+                est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est,
+                sollicitudin eu scelerisque pretium, placerat eget elit.</p>
+        </div>
+        <div class="m1triangle">
+            <div class="triangle"></div>
+        </div>
+    </div>
+    </div>
+    <div class="m2">
+        <p class="fos10pt">ABOUT OUR RESTAURANT</p>
+        <p class="fos30pt">Exclusive <b><i>restaurant in Paris,</i></b> the ultimate way to get amazing food from the
+            best chefs in the city. <b><i>Great atmosphere included.</b></i></p>
+    </div>
+    <div class="m3">
+        <div class="m3fl"></div>
+        <div class="m3fr"></div>
+        <div class="m3fc">
+            <p class="mtext1">HISTORY</p>
+            <p class="mtext2">Strange story of the emergence of healthy food</p>
+            <p class="mtext3">Sample text. Click to select the text box. Click again or double click to start editing
+                the text.</p>
+            <p class="u">Read More</p>
+        </div>
+    </div>
+    <div class="m4">
+        <div class="m4fl">
+            <p class="mtext1">COMUNITY</p>
+            <p class="mtext2">Healthy food in social networks, with us interesting</p>
+            <p class="mtext3">Sample text. Click to select the text box. Click again or double click to start editing
+                the text.</p>
+            <p class="u">Read More</p>
+        </div>
+        <div class="m4fr">
+            <p class="mtext1">PHILOSOPHY</p>
+            <p class="mtext2">Only the best food, the best musicians the best guests</p>
+            <p class="mtext3">Sample text. Click to select the text box. Click again or double click to start editing
+                the text.</p>
+            <p class="u">Read More</p>
+        </div>
+        <div class="m4fc"></div>
+    </div>
+    <div class="m5">
+        <div class="m51">
+            <p class="fm fos15pt">EVENTS</p>
+            <p class="mtextbold">Events of Healthy Food</p>
+        </div>
+        <div class="m52">
+            <div class="m52l">
+                <p class="mtext11">25</p>
+                <p class="mtext22">APRIL</p>
+                <p class="mtext33">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="m52r">
+                <p class="mtext11">19</p>
+                <p class="mtext22">June</p>
+                <p class="mtext33">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="m52c">
+                <p class="mtext11">15</p>
+                <p class="mtext22">May</p>
+                <p class="mtext33">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="m53">
+            <p>Read More</p>
+        </div>
+    </div>
+    <div class="m6"></div>
+    <div class="m61"></div>
+    <div class="m62">
+        <div class="m6text">
+            <p class="u1 ">Feedback</p>
+            <p class="fos30pt">Exclusive <b><i>restaurant in Paris,</i></b> the ultimate way to get amazing food from
+                the best chefs in the city. <b><i>Great atmosphere included.</b></i></p>
+        </div>
+    </div>
+    <div class="m7">
+        <p class="fm fos15pt">Our Menu</p>
+        <p class="mtextbold">Delicious From The Chef</p>
+    </div>
+    <div class="m8">
+        <p class="u2">PEAR SALAD / $11</p>
+        <p class="u3">Reid's Orchard Pears / Bitter Greens / Granola / Big Firefly / Farms Black and Blue / Pine Nut
+            Vinaigrette</p>
+    </div>
+    <div class="m9">
+        <p class="u2">BRODETTO DI PESCE / $9</p>
+        <p class="u3">Adriatic Seafood Soup / Clams / Prawns / Livornese / Langoustine Scallop / Celery / Olive</p>
+    </div>
+    <div class="m8">
+        <p class="u2">FARM GREENS / $9</p>
+        <p class="u3">Honey Vinaigrette / House Cheese Crouton / Fine Herbs</p>
+    </div>
+    <div class="m9">
+        <p class="u2">GRILLED KALE / $9</p>
+        <p class="u3">Bitter Greens / House Cheese Crouton / Kamon Iberico</p>
+
+    </div>
+    <div class="m8">
+        <p class="u2">RICOTTA GNUD / $18</p>
+        <p class="u3">Marinated Sardine / Red Currant / Chanterelles / Pine Nuts / Mantecato Vitello / Fennel / Olive /
+            Pepitas</p>
+    </div>
+    <div class="m9">
+        <p class="u2">CANESTRELLI / $18</p>
+        <p class="u3">Reid Orchatd Pears / Bitter Greens / House Cheese Crouton / Marinated Sardine / Chanterelles /
+            Clams</p>
+    </div>
+    <div class="m10">
+        <div class="m10l"></div>
+        <div class="m10r">
+            <div class="m10rtop"></div>
+            <div class="m10rbottom">
+                <div class="m10rbottoml"></div>
+                <div class="m10rbottomr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="log">
+        <div class="logl">
+            <div class="logl1"><img class="logl1img" src="./triangel.png" alt=""></div>
+            <div class="logl1"><img class="logl1imgupd" src="./round.png" alt=""></div>
+            <div class="logl1"><img class="logl1img" src="./leg2.png" alt=""></div>
+            <div class="logl1text">
+                <p class="loglt1">450</p>
+                <p class="loglt2">CROISSANTS</p>
+            </div>
+            <div class="logl1text">
+                <p class="loglt1">900</p>
+                <p class="loglt2">PLATES OF RICE</p>
+            </div>
+            <div class="logl1text">
+                <p class="loglt1">840</p>
+                <p class="loglt2">PIESE OF MEET</p>
+            </div>
+        </div>
+        <div class="logr">
+            <div class="logrcircle">
+                <p class="lgrtext">We cook <br><br>Everyday</p>
+            </div>
+        </div>
+    </div>
+    <div class="m7">
+        <p class="fm fos15pt">Contact Us</p>
+        <p class="mtextbold">Get in touch</p>
+    </div>
+    <div class="m12"><input class="placeholder f" type="text" placeholder="   Enter Your Name"></div>
+    <div class="m12"><input class="placeholder f" type="email" placeholder="   Enter Your email"></div>
+    <div class="m13">
+        <div class="checkbox"><input style="height: 15px;width:15px;margin-left:-3px;margin-top:-3px;" type="checkbox"
+                placeholder=""></div>
+        <div style="height: 100%;width:80%;float:left;display:flex;align-items:center">
+            <p class="m13t">I accept the </p>
+            <p class="m13t color">Terms of Services </p>
+        </div>
+    </div>
+    </div>
+    <div class="m54 a f"><button class="fa placeholder">Submit</button></div>
+    <div class="last">
+        <div class="lasttext">
+            <p> <br><br><br>Sample text. Click to select the text box. Click again or double click to start editing the
+                text.</p>
+            <p><br><br><br><br>Website Created by <a href=""><b>Muhammad Asad</b></a></p>
+        </div>
+    </div>
+</body>
+
+</html>
